@@ -1,1 +1,1 @@
-"# goodbyte.github.io" 
+# goodbyte.github.io

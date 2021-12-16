@@ -1,12 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>goodbyte - Portfolio</title>
+  <link rel="stylesheet" href="css/reset.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/background.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-  <h1>Portfolio Test</h1>
+  <div id="cover">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <header class="container">
+      <a id="logo" href="/">
+        <strong>good</strong><span class="light">byte</span>
+      </a>
+      <nav>
+        <div id="navbarToggler">
+          <svg class="ham" viewBox="0 0 100 100" width="48">
+            <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+          </svg>
+        </div>
+        <ul>
+          <li class="active" data-swiper-index="0">home</li>
+          <li data-swiper-index="1">projects</li>
+          <li data-swiper-index="2">about</li>
+          <li data-swiper-index="3">contact</li>
+        </ul>
+      </nav>
+    </header>
+    <div id="mainSwiper" class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div id="hero" class="container">
+            <div class="flex-column">
+              <h1>Hi <span class="wave">👋</span>, I'm José<span class="accent">.</span></h1>
+              <h3>Who's this guy?</h3>
+              <p>I'm a full-stack web developer from Uruguay 🧉</p>
+              <a class="btn" data-swiper-index="3">Let's chat</a>
+            </div>
+            <div id="photo">
+              <div class="circle-text">HTML5 - CSS3 - Javascript - Typescript - NodeJS - MongoDB - VueJS - </div>
+              <img src="images/nerd.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container flex-column">
+            <h2 class="underline">Projects</h2>
+            <div id="worksSwiper" class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide flex-column">
+                  <div class="work-images swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/works/1/1.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="work-description">
+                    <h3>Blackjack Bot</h3>
+                    <div class="tags">
+                      <div>Typescript</div>
+                      <div>Puppeteer</div>
+                    </div>
+                    <p>Personal project. I looked for a simple project to polish my Typescript skills. Made to work with GamingClub online casino, but it can be adapted quite easily.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide flex-column">
+                  <div class="work-images swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/works/2/1.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/works/2/2.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/works/2/3.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/works/2/4.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="work-description">
+                    <div class="flex space-between align-center">
+                      <h3>Gamelog</h3>
+                      <a class="icon" href="https://github.com/goodbyte/overwolf-gamelog" target="_blank" title="View code">
+                        <img src="images/code.svg" alt="">
+                      </a>
+                    </div>
+                    <div class="tags">
+                      <div>Overwolf</div>
+                      <div>Vue/Vuetify</div>
+                      <div>Firebase</div>
+                    </div>
+                    <p>Made for the Overwolf/PUBG Developers Challenge, Gamelog is a Battlelog (Battlefield) type of social network, in it you can find the latest news, see your stats as well as that of your friends, share updates, look for weapon stats, etc.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide flex-column">
+                  <div class="work-images swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/works/3/1.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/works/3/2.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="work-description">
+                    <div class="flex space-between align-center">
+                      <h3>DoubleTab</h3>
+                      <a class="icon" href="https://github.com/goodbyte/overwolf-doubletab" target="_blank" title="View code">
+                        <img src="images/code.svg" alt="">
+                      </a>
+                    </div>
+                    <div class="tags">
+                      <div>Overwolf</div>
+                      <div>ExpressJS</div>
+                      <div>SteamAPI</div>
+                      <div>RiotJS</div>
+                    </div>
+                    <p>DoubleTab is an Overwolf app for CSGO, it shows ingame stats for the current game, most used weapon, KDR, accuracy, etc.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide flex-column">
+                  <div class="work-images swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/works/4/1.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/works/4/2.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/works/4/3.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/works/4/4.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="work-description">
+                    <div class="flex space-between align-center">
+                      <h3>GEM</h3>
+                      <a class="icon" href="https://github.com/goodbyte/overwolf-gem" target="_blank" title="View code">
+                        <img src="images/code.svg" alt="">
+                      </a>
+                    </div>
+                    <div class="tags">
+                      <div>Overwolf</div>
+                      <div>AngularJS</div>
+                    </div>
+                    <p>GEM (Game Events Manager) is an Overwolf App that won first place in the Logitech LED Developers Challenge. It's a hook-action type of app, you select an ingame event an assign it to an action, showing a notification, playing a sound, etc.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide flex-column">
+                  <div class="work-images swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/works/5/1.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/works/5/2.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/works/5/3.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="work-description">
+                    <h3>Boletero</h3>
+                    <div class="tags">
+                      <div>Firebase</div>
+                      <div>Vue/Vuetify</div>
+                      <div>PDFMake</div>
+                    </div>
+                    <p>Boletero is an app that I made for my brother's business, it's super simple by design, the only requirements were that it had to be able to persist invoices, spare-parts prices and print an invoice.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div id="about" class="container flex space-between align-center">
+            <img src="images/nerd2.jpg" alt="">
+            <div class="flex-column">
+              <h2 class="underline">About Me</h2>
+              <div class="flex-column justify" style="row-gap: 10px;">
+                <p>My name is José Guerra, I'm <span id="yearsOld"></span> years old and I live in Uruguay.</p>
+                <p>I started programming at the age of 11 when I received my first PC, that led me through VB, Batch, JavaScript, GameMaker, C/C++, PHP, C#, and so on, and to this date I never stopped.</p>
+                <p>I've a minimalistic vision, passion for coding, maths, geometry and all logic and problem solving related.</p>
+                <p>I'm currently working as a freelance full-stack web developer, using Vue, Node and Mongo as my main stack.</p>
+              </div>
+              <a href="https://www.codewars.com/users/goodbyte" target="_blank">
+                <img src="https://www.codewars.com/users/goodbyte/badges/large" alt="Codewars Badge">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container flex-column">
+            <h2 class="underline">Contact</h2>
+            <p>Have a question or want to work together?</p>
+            <form class="flex-column" style="row-gap: 10px;">
+              <input type="text" placeholder="Name" required>
+              <input type="email" placeholder="Email" required>
+              <textarea rows="10" placeholder="Your message" required></textarea>
+              <button class="btn" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <span class="small muted">© 2021 ALL RIGHTS RESERVED</span>
+      <a class="icon" href="https://github.com/goodbyte" target="_blank">
+        <svg id="githubIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke-linecap="round" stroke-linejoin="round" style="fill: none; stroke: #ddd"/>
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke-linecap="round" stroke-linejoin="round" style="fill: none; stroke: #ddd; stroke-width: 2px"/>
+        </svg>
+      </a>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
+
 </html>

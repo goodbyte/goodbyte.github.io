@@ -5,9 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="José Guerra Portfolio, full-stack web developer.">
+  <meta name="keywords" content="goodbyte, José Guerra, portfolio, full stack web developer, Salto, Uruguay">
+  <meta property="og:image" content="https://goodbyte.github.io.git/images/portrait.jpg">
+
   <title>goodbyte - Portfolio</title>
   <link rel="stylesheet" href="css/reset.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/background.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -58,7 +63,7 @@
             </div>
             <div id="photo">
               <div class="circle-text">HTML5 - CSS3 - Javascript - Typescript - NodeJS - MongoDB - VueJS - </div>
-              <img src="images/nerd.jpg" alt="">
+              <img src="images/portrait.jpg" alt="">
             </div>
           </div>
         </div>
@@ -76,12 +81,17 @@
                     </div>
                   </div>
                   <div class="work-description">
-                    <h3>Blackjack Bot</h3>
+                    <div class="flex space-between align-center">
+                      <h3>Blackjack Bot</h3>
+                      <a class="icon" href="https://github.com/goodbyte/online-blackjack-bot" target="_blank" title="View code">
+                        <img src="images/github.svg" alt="">
+                      </a>
+                    </div>
                     <div class="tags">
                       <div>Typescript</div>
                       <div>Puppeteer</div>
                     </div>
-                    <p>Personal project. I looked for a simple project to polish my Typescript skills. Made to work with GamingClub online casino, but it can be adapted quite easily.</p>
+                    <p>Personal project, it helped me polish my Typescript skills. Made to work with GamingClub online casino, but it can be adapted quite easily.</p>
                   </div>
                 </div>
                 <div class="swiper-slide flex-column">
@@ -105,7 +115,7 @@
                     <div class="flex space-between align-center">
                       <h3>Gamelog</h3>
                       <a class="icon" href="https://github.com/goodbyte/overwolf-gamelog" target="_blank" title="View code">
-                        <img src="images/code.svg" alt="">
+                        <img src="images/github.svg" alt="">
                       </a>
                     </div>
                     <div class="tags">
@@ -113,9 +123,8 @@
                       <div>Vue/Vuetify</div>
                       <div>Firebase</div>
                     </div>
-                    <p>Made for the Overwolf/PUBG Developers Challenge, Gamelog is a Battlelog (Battlefield) type of social network, in it you can find the latest news, see your stats as well as that of your friends, share updates, look for weapon stats, etc.
-                    </p>
-                  </div>
+                    <p>Made for the Overwolf/PUBG Developers Challenge, Gamelog is a Battlelog (Battlefield) type of social network, in it you can find the latest news, see your stats as well as that of your friends, share updates, look for weapon stats, etc.</p>
+                   </div>
                 </div>
                 <div class="swiper-slide flex-column">
                   <div class="work-images swiper">
@@ -132,7 +141,7 @@
                     <div class="flex space-between align-center">
                       <h3>DoubleTab</h3>
                       <a class="icon" href="https://github.com/goodbyte/overwolf-doubletab" target="_blank" title="View code">
-                        <img src="images/code.svg" alt="">
+                        <img src="images/github.svg" alt="">
                       </a>
                     </div>
                     <div class="tags">
@@ -165,7 +174,7 @@
                     <div class="flex space-between align-center">
                       <h3>GEM</h3>
                       <a class="icon" href="https://github.com/goodbyte/overwolf-gem" target="_blank" title="View code">
-                        <img src="images/code.svg" alt="">
+                        <img src="images/github.svg" alt="">
                       </a>
                     </div>
                     <div class="tags">
@@ -205,14 +214,14 @@
         </div>
         <div class="swiper-slide">
           <div id="about" class="container flex space-between align-center">
-            <img src="images/nerd2.jpg" alt="">
+            <img src="images/about.jpg" alt="">
             <div class="flex-column">
               <h2 class="underline">About Me</h2>
               <div class="flex-column justify" style="row-gap: 10px;">
-                <p>My name is José Guerra, I'm <span id="yearsOld"></span> years old and I live in Uruguay.</p>
-                <p>I started programming at the age of 11 when I received my first PC, that led me through VB, Batch, JavaScript, GameMaker, C/C++, PHP, C#, and so on, and to this date I never stopped.</p>
-                <p>I've a minimalistic vision, passion for coding, maths, geometry and all logic and problem solving related.</p>
-                <p>I'm currently working as a freelance full-stack web developer, using Vue, Node and Mongo as my main stack.</p>
+                <p>My name is José Guerra, I'm <span id="yearsOld"></span> years old and I'm from Uruguay.</p>
+                <p>I started programming at the age of 11 when I received my first PC, that led me through VB, JavaScript, GameMaker, C/C++, PHP, C#, and so on, and to this date I never stopped.</p>
+                <p>I've a minimalistic vision, passion for coding, math, and all logic and problem solving related.</p>
+                <p>I'm currently working as a freelance full-stack web developer, with Vue, Node and Mongo as my main stack.</p>
               </div>
               <a href="https://www.codewars.com/users/goodbyte" target="_blank">
                 <img src="https://www.codewars.com/users/goodbyte/badges/large" alt="Codewars Badge">
@@ -224,11 +233,14 @@
           <div class="container flex-column">
             <h2 class="underline">Contact</h2>
             <p>Have a question or want to work together?</p>
-            <form class="flex-column" style="row-gap: 10px;">
-              <input type="text" placeholder="Name" required>
-              <input type="email" placeholder="Email" required>
-              <textarea rows="10" placeholder="Your message" required></textarea>
-              <button class="btn" type="submit">Send</button>
+            <form class="flex-column" style="row-gap: 10px;" action="https://api.staticforms.xyz/submit" method="post">
+              <input type="hidden" name="accessKey" value="24230bde-e760-4c6a-ba18-5798c20225eb">
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <textarea name="message" rows="10" placeholder="Your message" required></textarea>
+              <input type="hidden" name="redirectTo" value="https://goodbyte.github.io.git/success.html">
+              <input type="text" name="honeypot" style="display: none;">
+              <button class="btn" type="submit" value="Submit">Send</button>
             </form>
           </div>
         </div>
@@ -245,7 +257,7 @@
     </footer>
   </div>
 
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="scripts/swiper-bundle.min.js"></script>
   <script src="scripts/main.js"></script>
 </body>
 
